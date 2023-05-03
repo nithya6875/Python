@@ -1,5 +1,4 @@
-# Python-OOPs-Projects
-OOP based projects
+
 ## Advanced Concepts
 1. Generators and Iterators
 2. Decorators
