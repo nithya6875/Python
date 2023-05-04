@@ -72,3 +72,74 @@ sorted_dict_by_value = {k: v for k, v in sorted(d.items(), key=lambda item: item
 ``` 
 
 These are some advanced concepts related to dictionaries in Python. Understanding and using these concepts can help you write more efficient and elegant code.
+
+Sure, here are some more advanced concepts related to dictionaries in Python:
+
+8. Dictionary update method: It allows you to update a dictionary with the key-value pairs from another dictionary, or with a sequence of key-value pairs.
+
+Example:
+
+```
+d1 = {'a': 1, 'b': 2}
+d2 = {'c': 3, 'd': 4}
+d1.update(d2)  # updates d1 with the key-value pairs from d2
+d3 = [('e', 5), ('f', 6)]
+d1.update(d3)  # updates d1 with the key-value pairs from the list
+```
+
+9. Nested dictionaries: You can create a dictionary of dictionaries, where the values of the outer dictionary are themselves dictionaries.
+
+Example:
+
+```
+people = {'John': {'age': 30, 'gender': 'male'},
+          'Jane': {'age': 25, 'gender': 'female'}}
+```
+
+10. Dictionary keys with multiple values: You can create a dictionary where the keys have multiple values by using a dictionary of lists or sets.
+
+Example:
+
+```
+d = {'a': [1, 2, 3], 'b': [4, 5, 6]}
+```
+
+11. Dictionary membership testing: You can check if a key or value is present in a dictionary using the `in` operator.
+
+Example:
+
+```
+d = {'a': 1, 'b': 2, 'c': 3}
+print('a' in d)  # prints True
+print(1 in d.values())  # prints True
+```
+
+12. Dictionary pop method: It allows you to remove a key-value pair from a dictionary and return its value, or a default value if the key is not found.
+
+Example:
+
+```
+d = {'a': 1, 'b': 2, 'c': 3}
+value = d.pop('a', None)  # removes the 'a': 1 key-value pair and returns 1
+value = d.pop('d', None)  # returns None, since 'd' is not present in the dictionary
+```
+
+13. Dictionary copy method: It allows you to create a copy of a dictionary, either a shallow copy or a deep copy.
+
+Example:
+
+```
+d = {'a': 1, 'b': 2, 'c': 3}
+d_copy = d.copy()  # creates a shallow copy of the dictionary
+```
+
+14. Dictionary clear method: It allows you to remove all the key-value pairs from a dictionary.
+
+Example:
+
+```
+d = {'a': 1, 'b': 2, 'c': 3}
+d.clear()  # removes all the key-value pairs from the dictionary
+```
+
+These are some more advanced concepts related to dictionaries in Python. Understanding and using these concepts can help you write more complex and powerful programs.
