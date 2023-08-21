@@ -1,18 +1,22 @@
 class Item:
-    pass
-
-item1 = Item()
-
-
-# creating an instance
-
-item1.name = "Phone"
-item1.price = 100
-item1.quantity = 5
-
-print(type(item1))
-print(type(item1.name))
-print(type(item1.price))
+    def __init__(self, name: str, quantity):
+        # assertion example
+        assert quantity >= 0, f"Price {quantity} is not greater than or equal to zero!"
+        self.z = 3
 
 
+        # self assignments
 
+        print(f"I am created like that - {name}")
+        self.name = name
+
+    def calculate_total_price(self, x, y):
+        self.z = 3
+        return x * y
+
+
+item1 = Item("laptop", -1)
+
+print(item1.name)
+
+'''Learning about __init__ method in python.'''
